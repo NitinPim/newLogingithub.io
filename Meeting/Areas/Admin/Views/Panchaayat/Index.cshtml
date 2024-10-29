@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div >
+                    <label class="mt-3" for="dis">District</label>
+                    <select class=" form-control" id="dis">
+                        <option selected>District's</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Amravati">Amravati</option>
+                        <option value="Chandrapur">Chandrapur</option>
+                        <option value="Bhandara">Bhandara</option>
+                        <option value="Akola">Akola</option>
+                    </select>
+                </div>
+                <div >
+                    <label class="mt-3" for="taluka">Taluka</label>
+                    <select class=" form-control" id="taluka">
+                        <option selected>Taluka's</option>
+                        <option value="Kalmeshwar">Kalmeshwar</option>
+                        <option value="Saoner">Saoner</option>
+                        <option value="Katol">Katol</option>
+                        <option value="Ramtek">Ramtek</option>
+                        <option value="Wardha">Wardha</option>
+                    </select>
+                </div>
+                <div >
+                    <label class="mt-3" for="pancha">Panchayat </label>
+                    <input type="text" class="form-control" id="pancha" name="Panchayat">
+                </div>
+
+                <input class="mt-3" type="hidden" id="id" value="0" />
+                <button type="submit" class="btn btn-primary form-control" style="margin: 10px 0px 20px 0px ;padding:8px 35px " id="btnSubmit">Submit</button>
+
+            </div>
+        </div>
+
+
+        <table style="width:100%; margin-top:10px; " class="table table-striped align-middle table-hover table-bordered border-dark">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">Sr no</th>
+                    <th class="text-center">District</th>
+                    <th class="text-center">Taluka</th>
+                    <th class="text-center">Panchayat</th>
+                    <th class="text-center">Edit</th>
+                    <th class="text-center">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="getlist" class="container text-center" style="margin:30px;"></tbody>
+        </table>
+    </div>
+
+  
+</body>
+</html>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Areas/Admin/Script/Panchaayat.js"></script>
