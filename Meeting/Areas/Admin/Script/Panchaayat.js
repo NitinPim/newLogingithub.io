@@ -143,7 +143,7 @@ function LoadData(response) {
 
 
 
-////===============code for delete===================
+////============code for delete==========
 $(document).on('click', '#deletedtp', function () {
     Delete($(this).attr('data'));
 })
